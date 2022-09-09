@@ -74,7 +74,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome")) {
+		if(browser.equals("chrome")) {
 			
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions option = new ChromeOptions();
@@ -86,7 +86,7 @@ public class BaseTest
 			//option.addArguments("--ignore-certificate-errors-spki-list");
 			
 			driver = new ChromeDriver(option);
-		}else if(p.getProperty(browser).equals("firefox")) {
+		}else if(browser.equals("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
 			
@@ -112,7 +112,7 @@ public class BaseTest
 			
 			driver = new FirefoxDriver(option);
 			
-		}else if(p.getProperty(browser).equals("ie")) {
+		}else if(browser.equals("ie")) {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
