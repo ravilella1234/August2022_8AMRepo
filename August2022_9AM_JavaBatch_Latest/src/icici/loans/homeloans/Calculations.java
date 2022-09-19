@@ -19,7 +19,7 @@ public class Calculations
 	
 	public void sub()
 	{
-		results = x + y;
+		results = x - y;
 		System.out.println("Sub of A & B is : " +  results);
 	}
 
