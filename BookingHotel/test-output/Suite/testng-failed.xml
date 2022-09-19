@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Modify Existing Booking Test(failed)">
+    <classes>
+      <class name="testcases.PaymentManager">
+        <methods>
+          <include name="makePayment"/>
+        </methods>
+      </class> <!-- testcases.PaymentManager -->
+    </classes>
+  </test> <!-- Modify Existing Booking Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,17 @@
+Travel Website  - To book a Hotel
+---------------------------------
+
+Req1 - Goto Website, CheckIn Date, CheckOut Date, Adults, Type of Room, Payment-@hotel, Check for confirmation through mobile/email.
+
+Req2 - Goto Website, CheckIn Date, CheckOut Date, Adults, Type of Room, Paymentpay @hotel / (card/g-pay/cheque), Check for confirmation through mobile/email.
+
+Req3 - Goto Website, CheckIn Date(winthIn 7 days from today - no cancellations), CheckOut Date, Adults, Type of Room, Paymentpay @hotel / (card/g-pay/cheque), Check for confirmation through mobile/email.
+
+Req3 - Goto Website, CheckIn Date(winthIn 7 days from today - no cancellations), CheckOut Date, Adults, Type of Room, Paymentpay @hotel(5-10% off) / (card/g-pay/cheque)(10-20% off), Check for confirmation through mobile/email.
+
+
+Make a New Booking
+Modify the Existing Booking
+Cancel the Existing Booking
+
+
