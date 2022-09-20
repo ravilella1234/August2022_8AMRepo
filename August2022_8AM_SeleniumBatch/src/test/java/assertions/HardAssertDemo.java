@@ -26,6 +26,7 @@ public class HardAssertDemo
 		//Hard Assert
 		//Assert.assertEquals(actualLink, expectedLink);
 		Assert.assertTrue(actualLink.equals(expectedLink), "Both liks are not equal...");
+		
 	
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("sony");
 	}

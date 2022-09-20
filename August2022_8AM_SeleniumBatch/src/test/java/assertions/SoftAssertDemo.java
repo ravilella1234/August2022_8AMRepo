@@ -35,7 +35,6 @@ public class SoftAssertDemo
 		
 		s.assertTrue(false, "err4");
 		
-		
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("sony");
 		
 		s.assertAll();
