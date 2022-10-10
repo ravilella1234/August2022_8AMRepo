@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="testnglistners.Listner"/>
-    <listener class-name="testnglistners.RetryListener"/>
-  </listeners>
+  <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testng.TNG_004">
+      <class name="pom.POM_001">
         <methods>
-          <include name="endProcess"/>
-          <include name="startProcess"/>
-          <include name="amazon"/>
+          <include name="afterMethod"/>
+          <include name="login"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testng.TNG_004 -->
+      </class> <!-- pom.POM_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
