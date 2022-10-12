@@ -6,8 +6,8 @@
     <classes>
       <class name="pom.POM_001">
         <methods>
+          <include name="registration"/>
           <include name="afterMethod"/>
-          <include name="login"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- pom.POM_001 -->

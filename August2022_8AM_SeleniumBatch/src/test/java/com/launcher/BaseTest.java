@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -21,6 +23,7 @@ import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -83,7 +86,8 @@ public class BaseTest
 	{
 		if(browser.equals("chrome")) {
 			
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravi\\Desktop\\update\\chromedriver.exe");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\ravi\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 19");
 			
@@ -123,6 +127,8 @@ public class BaseTest
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
+		
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			
 	}
 	
@@ -263,6 +269,30 @@ public class BaseTest
 	{
 		test.log(Status.FAIL, failuremsg);
 		takesScreenshot();
+	}
+	
+	public void waitForElement(WebDriver driver, int timeInSeconds, WebElement locator, String typeofWait)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+		if(typeofWait.equals("elementToClickable")) {
+			wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+		}else if(typeofWait.equals("elementToVisable")) {
+			wait.until(ExpectedConditions.elementToBeSelected(locator));
+		}
+		
+	}
+	
+	public int randomNum() 
+	{
+		Random r = new Random();
+		int rNum = r.nextInt(99999);
+		return rNum;
+	}
+	
+	public void selectDropOption(WebElement locator, int index) 
+	{
+		Select s = new Select(locator);
+		s.selectByIndex(index);
 	}
 
 }

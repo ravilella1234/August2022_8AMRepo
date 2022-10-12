@@ -28,12 +28,19 @@ public class POM_001 extends BaseTest
 		test.log(Status.INFO, "Navigating to url : " + childProp.getProperty("automationurl"));
   }
   
-  @Test
+  @Test(enabled = false)
   public void login() 
   {
 	  LoginPage page = new LoginPage(driver);
 	  page.customerLogin();
 	  Assert.assertEquals(page.verifyLoginError(), "Authentication failed.");
+  }
+  
+  @Test
+  public void registration() throws Exception
+  {
+	  CustomerRegistrationPage page = new CustomerRegistrationPage(driver);
+	  page.customerRegistration();
   }
 
   @AfterMethod

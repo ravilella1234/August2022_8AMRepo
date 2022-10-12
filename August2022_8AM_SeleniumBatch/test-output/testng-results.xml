@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-10T03:33:07Z" name="Suite" finished-at="2022-10-10T03:33:57Z" duration-ms="49630">
+  <suite started-at="2022-10-12T03:40:52Z" name="Suite" finished-at="2022-10-12T03:41:11Z" duration-ms="18458">
     <groups>
     </groups>
-    <test started-at="2022-10-10T03:33:07Z" name="Test" finished-at="2022-10-10T03:33:57Z" duration-ms="49630">
+    <test started-at="2022-10-12T03:40:52Z" name="Test" finished-at="2022-10-12T03:41:11Z" duration-ms="18458">
       <class name="pom.POM_001">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pom.POM_001@3514a4c0]" started-at="2022-10-10T03:33:07Z" name="beforeMethod" finished-at="2022-10-10T03:33:34Z" duration-ms="26379" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pom.POM_001@40cb8df7]" started-at="2022-10-12T03:40:52Z" name="beforeMethod" finished-at="2022-10-12T03:41:01Z" duration-ms="9271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:pom.POM_001@3514a4c0]" started-at="2022-10-10T03:33:34Z" name="login" finished-at="2022-10-10T03:33:57Z" duration-ms="23149" status="PASS">
+        <test-method signature="registration()[pri:0, instance:pom.POM_001@40cb8df7]" started-at="2022-10-12T03:41:01Z" name="registration" finished-at="2022-10-12T03:41:11Z" duration-ms="9116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pom.POM_001@3514a4c0]" started-at="2022-10-10T03:33:57Z" name="afterMethod" finished-at="2022-10-10T03:33:57Z" duration-ms="1" status="PASS">
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pom.POM_001@40cb8df7]" started-at="2022-10-12T03:41:11Z" name="afterMethod" finished-at="2022-10-12T03:41:11Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
