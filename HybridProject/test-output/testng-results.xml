@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="7" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="148" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="148" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+      <class name="testcases.PortifolioManagement">
+        <test-method status="PASS" signature="createPortifolio()[pri:0, instance:testcases.PortifolioManagement@1794d431]" name="createPortifolio" duration-ms="7" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortifolio -->
+      </class> <!-- testcases.PortifolioManagement -->
+      <class name="testcases.Session">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.Session@39c0f4a]" name="init" is-config="true" duration-ms="31" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:testcases.Session@39c0f4a]" name="doLogin" duration-ms="14" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="kill()[pri:0, instance:testcases.Session@39c0f4a]" name="kill" is-config="true" duration-ms="6" started-at="2022-10-20T03:31:22Z" finished-at="2022-10-20T03:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kill -->
+      </class> <!-- testcases.Session -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
