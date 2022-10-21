@@ -9,6 +9,12 @@ public class Session extends BaseTest
   public void doLogin() 
   {
 	  System.out.println("doLogin");
+	  app.openBrowser("chromebrowser");
+	  app.navigateUrl("rediffurl");
+	  //app.clickElement("signin_linktext");
+	  //app.typeText("useremail_id", "rediffuser");
+	 // app.typeText("userpassword_id", "rediffpassword");
+	 // app.clickElement("loginsubmit_id");
   }
   
   @Test

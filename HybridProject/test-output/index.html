@@ -162,7 +162,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CreatePortifolioTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.Session&quot;&gt;
         &lt;methods&gt;
@@ -175,7 +175,7 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testcases.PortifolioManagement --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- CreatePortifolioTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,7 +187,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">CreatePortifolioTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,16 +217,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doLogin')
 data.setCell(0, 2, 'testcases.Session')
-data.setCell(0, 3, 14);
+data.setCell(0, 3, 13491);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createPortifolio')
 data.setCell(1, 2, 'testcases.PortifolioManagement')
-data.setCell(1, 3, 7);
+data.setCell(1, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 ms</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -274,26 +274,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">init</span>
+                <span class="method-name">init(org.testng.TestRunner@52d645b1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(org.testng.TestRunner@52d645b1)</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-start">155 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PortifolioManagement</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(org.testng.TestRunner@52d645b1)</span>
+                <span class="method-start">13656 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createPortifolio</span>
-                <span class="method-start">117 ms</span>
+                <span class="method-start">13656 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">kill</span>
-                <span class="method-start">128 ms</span>
+                <span class="method-start">13661 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
