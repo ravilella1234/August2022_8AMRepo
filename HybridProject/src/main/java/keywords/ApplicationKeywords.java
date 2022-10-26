@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+import com.aventstack.extentreports.ExtentTest;
+
 public class ApplicationKeywords extends ValidationKeywords
 {
 	
@@ -35,6 +37,11 @@ public class ApplicationKeywords extends ValidationKeywords
 	public void selectDateFormCalander()
 	{
 		
+	}
+	
+	public void setReport(ExtentTest test)
+	{
+		this.test = test;
 	}
 
 }
